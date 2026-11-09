@@ -1,14 +1,12 @@
-<!DOCTYPE html>
-<html lang="en">
+{% extends "base.html" %}
+{% block content %}
+<h1>Welcome to my favorites!</h1>
 
-<head>
-  <meta charset="UTF-8">
-  <title>Home Page</title>
-</head>
+<h2>Favorite Foods</h2>
 
-<body>
-  <h1>Welcome to my favorites!</h1>
-
-</body>
-
-</html>
+<ul>
+  {% for f in foods %}
+  <li>{{ f }}</li>
+  {% endfor %}
+</ul>
+{% endblock %}

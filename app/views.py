@@ -4,4 +4,8 @@ from django.shortcuts import render
 
 
 def home(request):
-    return render(request, "app/home.html")
+    foods = ["Shrimp", "Steak", "Spaghetti", "Cheese"]
+    context = {
+        "foods": foods,
+    }
+    return render(request, "app/home.html", context)
