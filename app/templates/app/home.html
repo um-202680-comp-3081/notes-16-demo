@@ -2,11 +2,8 @@
 {% block content %}
 <h1>Welcome to my favorites!</h1>
 
-<h2>Favorite Foods</h2>
+<p>
+  <a href="{% url 'app:foods' %}">My Favorite Foods</a>
+</p>
 
-<ul>
-  {% for f in foods %}
-  <li>{{ f }}</li>
-  {% endfor %}
-</ul>
 {% endblock %}
